@@ -2,6 +2,7 @@ new Vue({
     el: '#app',
     data: {
         logo: 'ZhangYao',
+        drawer: false,
         navs: [
             { id: '1', text: '基本资料', key: 'info' },
             { id: '2', text: '专业技能', key: 'skill' },
@@ -41,6 +42,10 @@ new Vue({
     methods: {
         gocard(key) {
             $("html,body").animate({ scrollTop: $("#" + key).offset().top - 60 }, 500);
+        },
+        mgocard(key) {
+            this.gocard(key);
+            this.drawer = false;
         },
         toCall() {
             window.location.href = 'tel:133-5387-1335';

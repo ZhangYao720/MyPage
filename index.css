@@ -43,6 +43,13 @@ body {
     margin-right: 5%;
 }
 
+.m-nav{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: solid 1px #b1b4b8;
+}
+
 /*大屏导航列表*/
 #header ul.nav-bar {
     list-style: none;
